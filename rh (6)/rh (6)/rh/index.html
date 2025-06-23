@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Архитектурный блог</title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/modern.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="static/icons/Vector.png" alt="logo">
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">Современные здания</li>
+                        <li class="nav-item ancient-link">Старинные здания</li>
+                        <li class="nav-item">Последние проекты</li>
+                        <li class="nav-item">Архитектурные новости</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="slider content-container">
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <div class="slider-item slider-left">
+                        <img src="static/images/1.png" alt="Slider images">
+                        <div class="overlay">
+                            <p class="slide-title">Самые актуальные <br /> архитектурные новости</p>
+                            <a href="/desktop.html" class="button">Смотреть</a>
+                        </div>
+                    </div>
+
+                    <div class="slider-item slider-right">
+                        <div class="item">
+                            <img src="static/images/slider_img_2.png" alt="Slider images">
+                            <div class="overlay">
+                                <p class="slide-title">Архитектурная мода 2019 года</p>
+                                <!-- Лучше указывать текст не заглавными буквами, а в таком стиле - "Смотреть"
+                            а в стилях при необходимости задавать text-transform с нужным значением -->
+                                <button class="button">Смотреть</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="static/images/slider_img_3.png" alt="Slider images">
+                            <div class="overlay">
+                                <!-- Обрати внимание как переносится текст на макете -->
+                                <p class="slide-title">Современные строения</p>
+                                <button class="button">Смотреть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide next">
+                    <div class="slider-item slider-left">
+                        <img src="static/images/1.png" alt="Slider images">
+                        <div class="overlay">
+                            <p class="slide-title">Самые актуальные <br /> архитектурные новости</p>
+                            <a href="/desktop.html" class="button">Смотреть</a>
+                        </div>
+                    </div>
+
+                    <div class="slider-item slider-right">
+                        <div class="item">
+                            <img src="static/images/slider_img_2.png" alt="Slider images">
+                            <div class="overlay">
+                                <p class="slide-title">Архитектурная мода 2019 года</p>
+                                <!-- Лучше указывать текст не заглавными буквами, а в таком стиле - "Смотреть"
+                            а в стилях при необходимости задавать text-transform с нужным значением -->
+                                <a href="/desktop.html" class="button">Смотреть</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="static/images/slider_img_3.png" alt="Slider images">
+                            <div class="overlay">
+                                <!-- Обрати внимание как переносится текст на макете -->
+                                <p class="slide-title">Современные строения</p>
+                                <button class="button">Смотреть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide next">
+                    <div class="slider-item slider-left">
+                        <img src="static/images/1.png" alt="Slider images">
+                        <div class="overlay">
+                            <p class="slide-title">Самые актуальные <br /> архитектурные новости</p>
+                            <a href="/desktop.html" class="button">Смотреть</a>
+                        </div>
+                    </div>
+
+                    <div class="slider-item slider-right">
+                        <div class="item">
+                            <img src="static/images/slider_img_2.png" alt="Slider images">
+                            <div class="overlay">
+                                <p class="slide-title">Архитектурная мода 2019 года</p>
+                                <!-- Лучше указывать текст не заглавными буквами, а в таком стиле - "Смотреть"
+                            а в стилях при необходимости задавать text-transform с нужным значением -->
+                                <button class="button">Смотреть</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="static/images/slider_img_3.png" alt="Slider images">
+                            <div class="overlay">
+                                <!-- Обрати внимание как переносится текст на макете -->
+                                <p class="slide-title">Современные строения</p>
+                                <button class="button">Смотреть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide next">
+                    <div class="slider-item slider-left">
+                        <img src="static/images/1.png" alt="Slider images">
+                        <div class="overlay">
+                            <p class="slide-title">Самые актуальные <br /> архитектурные новости</p>
+                            <a href="/desktop.html" class="button">Смотреть</a>
+                        </div>
+                    </div>
+
+                    <div class="slider-item slider-right">
+                        <div class="item">
+                            <img src="static/images/slider_img_2.png" alt="Slider images">
+                            <div class="overlay">
+                                <p class="slide-title">Архитектурная мода 2019 года</p>
+                                <!-- Лучше указывать текст не заглавными буквами, а в таком стиле - "Смотреть"
+                            а в стилях при необходимости задавать text-transform с нужным значением -->
+                                <button class="button">Смотреть</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="static/images/slider_img_3.png" alt="Slider images">
+                            <div class="overlay">
+                                <!-- Обрати внимание как переносится текст на макете -->
+                                <p class="slide-title">Современные строения</p>
+                                <button class="button">Смотреть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+        <!-- Старайся разделять блоки кода пробелами, так проще будет ориентироваться в коде -->
+        <section class="modern content-container">
+            <h2 class="tag">Современные здания</h2>
+
+            <div class="modern-grid">
+                <div class="modern-grid_left">
+                    <!-- Атрибут alt лучше пустым не оставлять,можно вписать Picture или Image например -->
+                    <img src="static/images/3.png" alt="Image">
+
+                    <!-- Не забудь добавить анимацию при наведении :) как в навигации -->
+                    <p class="image-desc_link">Офисные здания</p>
+                </div>
+
+                <div class="modern-grid_right">
+                    <!-- Это верхний блок -->
+                    <div class="upper-block">
+                        <div class="small-img">
+                            <img src="static/images/4.png" alt="Image">
+                        </div>
+
+                        <div class="small-img">
+                            <img src="static/images/5.png" alt="Image">
+                        </div>
+                    </div>
+
+                    <!-- А это нижний блок -->
+                    <div class="lower-block">
+                        <img src="static/images/6.png" alt="Image">
+
+                        <!-- Не забудь добавить анимацию при наведении :) как в навигации -->
+                        <p class="image-desc_link">Жилые помещения</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container firts-form">
+                <h2 class="newsletter_title">Подпишитесь на нашу e-mail рассылку</h2>
+
+                <div class="form">
+                    <div class="form_input-wrapper">
+                        <input id="email" class="input" type="email" placeholder="Введите Ваш email"
+                            autocomplete="false">
+
+                        <span class="error-hint"></span>
+                    </div>
+
+                    <button class="button">Подписаться</button>
+                </div>
+
+                <div class="notice-block success-block">
+                    <span>Форма успешно отправлена</span>
+                </div>
+
+                <div class="notice-block error-block">
+                    <span>
+                        Что-то пошло не так.<br>
+                        Попробуйте пожалуйста позднее
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- У тебя всё получится!!! :) это просто:) -->
+
+        <section class="ancient content-container">
+            <h2 class="tag">Старинные здания</h2>
+
+            <div class="ancient-grid">
+                <div class="large-img">
+                    <img src="static/images/9.png" alt="image">
+                    <p class="image-desc_link">Религиозные строения</p>
+                </div>
+
+                <div class="ancient-grid_down">
+                    <div class="ancient-grid_up">
+
+                        <div class="small-images">
+                            <img class="eight-img" src="static/images/8.png" alt="image">
+                            <img class="ten-img" src="static/images/10.png" alt="image">
+                        </div>
+
+                        <div class="wide-img">
+                            <img src="static/images/7.png" alt="image">
+                        </div>
+                    </div>
+
+                    <p class="image-desc_link">Туристические здания</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- А это ещё проще :) -->
+
+        <section class="hero">
+            <div class="hero-wrapper">
+                <div class="hero-content hero-slide">
+                    <div class="hero-label">Архитектурные новости</div>
+
+                    <h1 class="hero-slide_title"><span>Самые необычные здания</span><br> во всем мире</h1>
+
+                    <button class="hero-button button">Смотреть</button>
+                </div>
+
+                <div class="hero-content hero-slide next">
+                    <div class="hero-label">Архитектурные новости</div>
+
+                    <h1 class="hero-slide_title"><span>Самые необычные здания</span><br> во всем мире</h1>
+
+                    <button class="hero-button button">Смотреть</button>
+                </div>
+
+                <div class="hero-content hero-slide next">
+                    <div class="hero-label">Архитектурные новости</div>
+
+                    <h1 class="hero-slide_title"><span>Самые необычные здания</span><br> во всем мире</h1>
+
+                    <button class="hero-button button">Смотреть</button>
+                </div>
+
+                <div class="hero-content hero-slide next">
+                    <div class="hero-label">Архитектурные новости</div>
+
+                    <h1 class="hero-slide_title"><span>Самые необычные здания</span><br> во всем мире</h1>
+
+                    <button class="hero-button button">Смотреть</button>
+                </div>
+
+                <div class="hero-slider-dots">
+                    <span class="hero-slider-dot active"></span>
+                    <span class="hero-slider-dot"></span>
+                    <span class="hero-slider-dot"></span>
+                    <span class="hero-slider-dot"></span>
+                </div>
+
+                <button class="hero-arrow hero-arrow-prev disabled">
+                    <img src="static/icons/left.png" alt="left">
+                </button>
+
+                <button class="hero-arrow hero-arrow-next">
+                    <img src="static/icons/right.png" alt="right">
+                </button>
+            </div>
+        </section>
+
+        <section class="newsletter second-newsletter">
+            <div class="container">
+                <h2 class="newsletter_title">Подпишитесь на нашу e-mail рассылку</h2>
+
+                <form class="form">
+                    <div class="form_input-wrapper">
+                        <input id="email-field" class="input" type="email" placeholder="Введите Ваш email"
+                            autocomplete="false">
+
+                        <span class="error-hint"></span>
+                    </div>
+                    <button class="button" type="submit">Подписаться</button>
+                </form>
+
+                <div class="notice-block success-block">
+                    <span>Форма успешно отправлена</span>
+                </div>
+
+                <div class="notice-block error-block">
+                    <span>
+                        Что-то пошло не так.<br>
+                        Попробуйте пожалуйста позднее
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-socials">
+                    <a href="/" aria-label="Facebook">
+                        <img src="static/icons/Facebook.png" alt="Facebook icon">
+                    </a>
+                    <a href="/" aria-label="Twitter">
+                        <img src="static/icons/Twitter.png" alt="Twitter icon">
+                    </a>
+                    <a href="/" aria-label="Instagram">
+                        <img src="static/icons/Instagram.png" alt="Instagram icon">
+                    </a>
+                    <a href="/" aria-label="Pinterest">
+                        <img src="static/icons/Pinterest.png" alt="Pinterest icon">
+                    </a>
+                    <a href="#" aria-label="Google Plus">
+                        <img src="static/icons/Google.png" alt="Google icon">
+                    </a>
+                    <a href="#" aria-label="Medium">
+                        <img src="static/icons/Spotify.png" alt="Spotify icon">
+                    </a>
+                    <a href="/" aria-label="Telegram">
+                        <img src="static/icons/Tumblr.png" alt="Telegram icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <button id="scrollTopBtn" class="scroll-top hidden">
+            <img class="icon" src="static/icons/up.svg" alt="Arrow up icon" />
+            <span class="rotated-text">Наверх</span>
+        </button>
+
+        <script src="scripts/scroll-btn.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/form.js"></script>
+        <script src="scripts/hero-slider.js"></script>
+        <script src="scripts/newform.js"></script>
+    </body>
+
+</html>

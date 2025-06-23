@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/page_2/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <title>Архитектурный блог</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="static/icons/Vector.png" alt="logo">
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">Современные здания</li>
+                    <li class="nav-item ancient-link">Старинные здания</li>
+                    <li class="nav-item">Последние проекты</li>
+                    <li class="nav-item">Архитектурные новости</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs_item">
+                <a class="breadcrumbs_link" href="/index.html">Главная</a> \
+            </li>
+            <li class="breadcrumbs_item">
+                <a class="breadcrumbs_link current" href="/">Архитектурные новости</a>
+            </li>
+        </ul>
+
+        <h2 class="tag">Архитектурные новости</h2>
+
+        <h3 class="sub_title">Самые необычные здания во всем мире</h3>
+
+        <span class="sub-number">Номер 10 / 50</span>
+
+        <div class="gallery">
+            <div class="cardfour">
+                <div class="image_wrapper">
+                    <img src="static/imagesdesc/pc1.png" alt="Доминион" />
+                    <button class="image_btn">Перейти</button>
+                </div>
+
+                <p class="image_text">Прекрасное офисное здание «Доминион»</p>
+            </div>
+            <div class="cardtall">
+                <div class="image_wrapper">
+                    <img src="static/imagesdesc/pc2.png" alt="Чешир" />
+                    <button class="image_btn">Перейти</button>
+                </div>
+
+                <p class="image_text">Жилое помещение «С Чешир»</p>
+            </div>
+            <div class="cardfour">
+                <div class="image_wrapper">
+                    <img src="static/imagesdesc/pc3.png" alt="Деконструктивизм" />
+                    <button class="image_btn">Перейти</button>
+                </div>
+
+                <p class="image_text">Деконструктивизм во всей своей красе</p>
+            </div>
+            <div class="card">
+                <div class="image_wrapper">
+                    <img src="static/imagesdesc/pc4.png" alt="Кубы" />
+                    <button class="image_btn">Перейти</button>
+                </div>
+
+                <p class="image_text">Построенный из кубов</p>
+            </div>
+            <div class="cardsmall">
+                <div class="image_wrapper">
+                    <img src="static/imagesdesc/pc5.png" alt="Цветочные мотивы" />
+                    <button class="image_btn">Перейти</button>
+                </div>
+
+                <p>Цветочные мотивы в современной архитектуре</p>
+            </div>
+            <div class="card">
+                <div class="image_wrapper">
+                    <img src="static/imagesdesc/pc6.png" alt="Купольные постройки" />
+                    <button class="image_btn">Перейти</button>
+                </div>
+
+                <p>Купольные постройки</p>
+            </div>
+            <div class="cardfour">
+                <div class="image_wrapper">
+                    <img src="static/imagesdesc/pc7.png" alt="Город грехов" />
+                    <button class="image_btn">Перейти</button>
+                </div>
+
+                <p>Здания будто из фильма «Город грехов»</p>
+            </div>
+            <div class="cardtall">
+                <div class="image_wrapper">
+                    <img src="static/imagesdesc/pc8.png" alt="Лестницы" />
+                    <button class="image_btn">Перейти</button>
+                </div>
+
+                <p>Необычные лестницы</p>
+            </div>
+            <div class="cardfour">
+                <div class="image_wrapper">
+                    <img src="static/imagesdesc/pc9.png" alt="Кости животных" />
+                    <button class="image_btn">Перейти</button>
+                </div>
+
+                <p>Кости животных в архитектуре</p>
+            </div>
+        </div>
+
+        <div class="pagination" style="--length: 6;">
+            <button class="pagination_number left current" style="--idx: 0">1</button>
+            <button class="pagination_number" style="--idx: 1">2</button>
+            <button class="pagination_number" style="--idx: 2">3</button>
+            <button class="pagination_number" style="--idx: 3">4</button>
+            <button class="pagination_number" style="--idx: 4">5</button>
+            <button class="pagination_number" style="--idx: 5">6</button>
+            <div class="pagination_line"></div>
+        </div>
+
+        <button id="scrollTopBtn" class="scroll-top hidden">
+            <img class="icon" src="static/icons/up.svg" alt="Arrow up icon" />
+            <span class="rotated-text">Наверх</span>
+        </button>
+    </main>
+
+    <section class="newsletter">
+        <div class="container firts-form">
+            <h2 class="newsletter_title">Подпишитесь на нашу e-mail рассылку</h2>
+
+            <div class="form">
+                <div class="form_input-wrapper">
+                    <input id="email" class="input" type="email" placeholder="Введите Ваш email" autocomplete="false">
+
+                    <span class="error-hint"></span>
+                </div>
+
+                <button class="button">Подписаться</button>
+            </div>
+
+            <div class="notice-block success-block">
+                <span>Форма успешно отправлена</span>
+            </div>
+
+            <div class="notice-block error-block">
+                <span>
+                    Что-то пошло не так.<br>
+                    Попробуйте пожалуйста позднее
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="/" aria-label="Facebook">
+                    <img src="static/icons/Facebook.png" alt="Facebook icon">
+                </a>
+                <a href="/" aria-label="Twitter">
+                    <img src="static/icons/Twitter.png" alt="Twitter icon">
+                </a>
+                <a href="/" aria-label="Instagram">
+                    <img src="static/icons/Instagram.png" alt="Instagram icon">
+                </a>
+                <a href="/" aria-label="Pinterest">
+                    <img src="static/icons/Pinterest.png" alt="Pinterest icon">
+                </a>
+                <a href="#" aria-label="Google Plus">
+                    <img src="static/icons/Google.png" alt="Google icon">
+                </a>
+                <a href="#" aria-label="Medium">
+                    <img src="static/icons/Spotify.png" alt="Spotify icon">
+                </a>
+                <a href="/" aria-label="Telegram">
+                    <img src="static/icons/Tumblr.png" alt="Telegram icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/scroll-btn.js"></script>
+    <script src="scripts/pagination.js"></script>
+</body>
+
+</html>

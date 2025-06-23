@@ -1,0 +1,229 @@
+@import url("header.css");
+@import url("slider.css");
+@import url("newsletter.css");
+@import url("hero.css");
+@import url("footer.css");
+
+/*
+1280 - desktop
+768 - tablet
+520 - mobile
+*/
+
+html {
+    font-size: 10px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: black;
+    line-height: 1.6;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto 172px;
+    padding: 0 10px;
+}
+
+.tag {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: #D90000;
+    font-size: 14px;
+    color: white;
+}
+
+.button {
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    padding: 30px 200px;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    color: #333;
+    transition: opacity .4s ease;
+    .icon {
+        width: 26px;
+        height: 26px;
+    }
+    .rotated-text {
+        margin-top: 20px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        transform: rotate(180deg);
+    }
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+span {
+    font-weight: 100;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 1280px) {
+    .content-container {
+        max-width: 1000px;
+        margin-bottom: 140px;
+    }
+    .newsletter input[type="email"] {
+        width: 300px;
+    }
+    .section-title {
+        padding: 30px 100px;
+    }
+    .scroll-top {
+        right: 40px;
+    }
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        padding: 0 15px;
+        margin-bottom: 100px;
+    }
+    .newsletter {
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 10px;
+        height: auto;
+        .newsletter_title {
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+        .form {
+            .input {
+                width: 280px;
+                margin-right: 0;
+            }
+            .button {
+                flex-shrink: 0;
+                width: 180px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+    .section-title {
+        padding: 30px 40px;
+        font-size: 20px;
+    }
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+        .rotated-text {
+            font-size: 12px;
+        }
+    }
+    .container {
+        max-width: 720px;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 520px) {
+    html {
+        font-size: 9px;
+    }
+    .tag {
+        font-size: 12px;
+        padding: 4px 16px;
+    }
+    .button {
+        width: 100%;
+        height: 46px;
+        font-size: 14px;
+    }
+    .newsletter {
+        .newsletter_title {
+            margin: 0 0 20px;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -.04em;
+        }
+        .form {
+            flex-direction: column;
+            row-gap: 24px;
+            width: auto;
+            .form_input-wrapper {
+                width: 100%;
+                margin-right: 0;
+                .error-hint {
+                    bottom: 0;
+                    font-size: 12px;
+                }
+            }
+            .input {
+                width: 100%;
+                height: 46px;
+            }
+            .button {
+                width: 100%;
+            }
+        }
+    }
+    .section-title {
+        padding: 20px;
+        font-size: 18px;
+    }
+    .scroll-top {
+        .icon {
+            width: 22px;
+            height: 22px;
+        }
+        .rotated-text {
+            font-size: 12px;
+        }
+    }
+    .container {
+        padding: 0 10px;
+    }
+}

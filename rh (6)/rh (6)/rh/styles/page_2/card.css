@@ -1,0 +1,165 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 52px 20px;
+    width: 100%;
+    margin: 0 auto 40px;
+}
+
+.cardfour,
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: color 0.3s ease;
+    img {
+        width: 100%;
+        transition: filter 0.3s ease;
+        cursor: pointer;
+    }
+    .cardfour {
+        height: 421px;
+        width: 277px;
+        transition: filter 0.3s ease;
+        cursor: pointer;
+    }
+    p {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    &:hover {
+        p,
+        p a {
+            color: red;
+        }
+        img {
+            filter: brightness(0.8);
+        }
+        .image_btn {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: all;
+        }
+    }
+    .image_wrapper {
+        position: relative;
+    }
+    .image_btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 46px;
+        background-color: #fff;
+        opacity: 0;
+        transform: translateY(6px);
+        transition: opacity .3s ease, transform .4s ease;
+        pointer-events: none;
+    }
+}
+
+.cardsmall {
+    cursor: pointer;
+    height: 358px;
+    width: 324px;
+    transition: filter 0.3s ease;
+    p {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    &:hover {
+        p,
+        p a {
+            color: red;
+        }
+        img {
+            filter: brightness(0.8);
+        }
+    }
+    .image_wrapper {
+        position: relative;
+    }
+    .image_btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 46px;
+        background-color: #fff;
+        opacity: 0;
+        transform: translateY(6px);
+        transition: opacity .3s ease, transform .4s ease;
+        pointer-events: none;
+    }
+}
+
+.cardtall {
+    cursor: pointer;
+    width: 358px;
+    /* height: 489px; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: color 0.3s ease;
+    p {
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    &:hover {
+        p,
+        p a {
+            color: red;
+        }
+        img {
+            filter: brightness(0.8);
+        }
+    }
+    .image_wrapper {
+        position: relative;
+    }
+    .image_btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 46px;
+        background-color: #fff;
+        opacity: 0;
+        transform: translateY(6px);
+        transition: opacity .3s ease, transform .4s ease;
+        pointer-events: none;
+    }
+}

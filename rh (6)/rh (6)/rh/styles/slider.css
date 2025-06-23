@@ -1,0 +1,256 @@
+.slider {
+    position: relative;
+    height: 542px;
+    margin-bottom: 172px;
+    overflow-x: hidden;
+
+    .slider-wrapper {
+        position: relative;
+        height: calc(100% - 52px);
+    }
+
+    .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        transition: opacity .5s ease, transform .8s ease;
+
+        &.prev,
+        &.next {
+            opacity: 0;
+        }
+
+        &.prev {
+            transform: translateX(-100%);
+        }
+
+        &.next {
+            transform: translateX(100%);
+        }
+    }
+
+    .slider-item {
+        .overlay {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            bottom: 30px;
+            left: 30px;
+            color: white;
+
+            .slide_title {
+                line-height: 1.2;
+            }
+
+            .button {
+                border: 1px solid #fff;
+            }
+        }
+    }
+
+    .slider-left {
+        position: relative;
+        flex-grow: 1;
+
+        .overlay {
+            p {
+                font-size: 36px;
+            }
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            height: 100%;
+        }
+
+        button {
+            background: rgb(0 0 0 / 30%);
+            border: 1px solid white;
+            color: white;
+        }
+    }
+
+    .slider-right {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 30%;
+
+        .item {
+            position: relative;
+            flex-grow: 1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            p {
+                width: 240px;
+                font-size: 24px;
+            }
+
+            button {
+                background: rgb(0 0 0 / 30%);
+                border: 1px solid white;
+                color: white;
+            }
+        }
+    }
+}
+
+.dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    column-gap: 12px;
+    transform: translateX(-50%);
+
+    .dot {
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #9b9b9b;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &.active {
+            background: #4F4F4F;
+            pointer-events: none;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider {
+        .slider-right {
+            flex-shrink: 0;
+            width: 35%;
+        }
+    }
+
+    .dots {
+        bottom: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        height: 420px;
+        margin-bottom: 60px;
+
+        .slider-item {
+            .button {
+                width: 150px;
+                height: 42px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        .slider-left {
+            .overlay {
+                bottom: 20px;
+                left: 20px;
+                row-gap: 20px;
+
+                p {
+                    font-size: 24px;
+                }
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .slider-right {
+            width: 40%;
+
+            .overlay p {
+                font-size: 18px;
+                width: 180px;
+            }
+
+            .item {
+                height: 130px;
+            }
+        }
+    }
+
+    .dots {
+        column-gap: 8px;
+
+        .dot {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .slider {
+        height: 360px;
+        margin-bottom: 80px;
+
+        .slide {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .slider-left {
+            height: 220px;
+
+            .overlay {
+                bottom: 16px;
+                left: 16px;
+                row-gap: 16px;
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .slider-right {
+            width: 100%;
+            flex-direction: row;
+            gap: 8px;
+
+            .item {
+                flex: 1;
+                height: 120px;
+            }
+
+            .overlay {
+                bottom: 10px;
+                left: 10px;
+
+                p {
+                    font-size: 14px;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .dots {
+        bottom: -24px;
+
+        .dot {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}

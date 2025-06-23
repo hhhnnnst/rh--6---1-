@@ -1,0 +1,141 @@
+.newsletter {
+    display: flex;
+    align-items: center;
+    height: 312px;
+    background-color: #f3f3f7;
+    .newsletter_title {
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .form {
+        position: relative;
+        .form_input-wrapper {
+            position: relative;
+            .error-hint {
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                font-size: 14px;
+                font-weight: 500;
+                font-style: italic;
+                color: #e92828;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity .4s ease;
+                transform: translateY(100%);
+            }
+        }
+        &.success {
+            .success-block {
+                opacity: 1;
+                pointer-events: all;
+                span {
+                    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+                }
+            }
+        }
+        &.error {
+            .error-block {
+                opacity: 1;
+                pointer-events: all;
+                span {
+                    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+                }
+            }
+        }
+    }
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin: 0 auto;
+        .button {
+            background-color: #1A1A1A;
+            color: #fff;
+        }
+        &.error {
+            .input {
+                border-color: #e92828;
+            }
+            .form_input-wrapper {
+                .error-hint {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .notice-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #F3F3F7;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .6s ease;
+        span {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 22px;
+            color: #1A1A1A;
+            clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+            transition: clip-path 1.2s linear .6s;
+        }
+    }
+    form {
+        position: relative;
+        margin: 0 auto;
+        transition: border-color 0.3s ease;
+    }
+    form.error {
+        border-color: #e74c3c;
+        background-color: #fdecea;
+        box-shadow: 0 0 8px rgba(231, 76, 60, 0.5);
+    }
+    form.success {
+        border-color: #27ae60;
+        background-color: #e9f7ef;
+        box-shadow: 0 0 8px rgba(39, 174, 96, 0.5);
+    }
+    form.error::after,
+    form.success::after {
+        content: attr(data-message);
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        font-weight: 600;
+        padding: 6px 12px;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    form.success::after {
+        color: #27ae60;
+        background-color: #d4edda;
+        border: 1px solid #27ae60;
+        content: 'Подписка успешна!';
+    }
+    form.error input#email {
+        border-color: #e74c3c;
+    }
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 350px;
+    height: 50px;
+}
