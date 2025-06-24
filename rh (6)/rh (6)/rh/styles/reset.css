@@ -39,6 +39,7 @@ ul {
 
 li {
     list-style: none;
+    cursor: pointer;
 }
 
 button,
@@ -59,6 +60,10 @@ button {
     background: transparent;
     color: inherit;
     cursor: pointer;
+}
+
+.text {
+    font-size: 20px;
 }
 
 input {
